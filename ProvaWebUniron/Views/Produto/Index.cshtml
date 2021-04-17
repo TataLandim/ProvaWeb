@@ -1,0 +1,41 @@
+﻿@model IList<Produto>;
+
+@{
+
+}
+
+<h1> Lista de produto</h1>
+
+@if (Model.Any())
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Descricao</th>
+                <th scope="col">Preco</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Observacao</th>
+                <th scope="col">Acao</th>
+
+                
+            </tr>
+        </thead>
+        @foreach (var produto in Model.OrderBy(x=>x.Categoria))
+        {
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>@produto.CodProduto</td>
+                    <td>@produto.Descricao</td>
+                    <td>@produto.Preco</td>
+                    <td>@produto.Categoria</td>
+                    <td>@produto.Observacao</td> 
+                 
+
+                </tr>
+            </tbody>
+        }
+    </table>
+}

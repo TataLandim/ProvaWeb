@@ -1,0 +1,24 @@
+﻿@model Produto;
+
+@{ 
+
+}
+
+<form asp-controller="Produto" asp-action="Create">
+    <div class="row">
+
+        <input asp-for="Descricao" type="text" class="form-control" placeholder="Descricao" required>
+        
+        <input asp-for="CodProduto" type="text" class="form-control" placeholder="Codigo do produto" required>
+
+        <input asp-for="Preco" type="text" class="form-control" placeholder="Preco" required>
+
+        <input asp-for="Categoria" type="text" class="form-control" placeholder="Categoria" required>
+
+
+        <input asp-for="Observacao" type="text" class="form-control" placeholder="Observacao">       
+
+    </div>
+    <br />
+    <button type="submit"> Salvar</button>
+</form>

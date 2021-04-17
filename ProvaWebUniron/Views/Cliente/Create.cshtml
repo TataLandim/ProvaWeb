@@ -1,0 +1,35 @@
+﻿@model Cliente;
+@{ 
+
+}
+
+<form asp-controller="Cliente" asp-action="Create">
+    <div class="row">
+        
+            <input asp-for="Nome" type="text" class="form-control" placeholder="Nome" required>
+        
+        
+            <input asp-for="Sexo" type="text" class="form-control" placeholder="Sexo">
+        
+       
+            <input asp-for="CPF" type="text" class="form-control" placeholder="CPF" required>
+       
+       
+            <input asp-for="Endereco" type="text" class="form-control" placeholder="Endereco">
+        
+        
+            <input asp-for="Numero" type="text" class="form-control" placeholder="Numero">
+        
+       
+            <input asp-for="Bairro" type="text" class="form-control" placeholder="Bairro">
+        
+       
+            <input asp-for="Cep" type="text" class="form-control" placeholder="Cep">
+        
+      
+            <input asp-for="Telefone" type="text" class="form-control" placeholder="Telefone" required>
+        
+    </div>
+    <br />
+    <button type="submit"> Salvar</button>
+</form>
